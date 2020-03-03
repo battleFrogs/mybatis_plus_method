@@ -36,24 +36,6 @@ public class MyGenerator {
     }
 
 
-    // 项目路径
-     String projectPath = ""; //System.getProperty("user.dir");
-    //
-     String outPutDir = projectPath + "/src/main/java";
-    // 创建者
-     String authorName = "gjc";
-    // 是否生成xml文件的 resultMap和columnList通用
-     Boolean isSetBaseColumnList = true;
-     Boolean isSetBaseResultMap = true;
-
-    // 全局名称配置
-     String entityName = "%sDO"; //%sDO
-     String mapperName = "%sDOMapper"; //%sDOMapper
-     String controllerName = "";
-     String serviceName = "";
-     String serviceImplName = "";
-//     String
-
 
 
 
@@ -99,7 +81,7 @@ public class MyGenerator {
         boolean isCustomEntity = false;
 
         // 是否要创建xx文件，
-        // 1.设置了那边自定义配置true，这里必须为false不创建
+        // 1.设置了那边自定义配置true，这里必须为false则创建自定义文件
         // 2.没有设置自定义配置为true，同时又设置是否创建为false，则不创建文件
         boolean isCreateXml = false;
         boolean isCreateMapper = false;
