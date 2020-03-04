@@ -43,6 +43,7 @@ public class MyGenerator {
 
         // 项目路径
 //        String projectPath = ""; //System.getProperty("user.dir");
+        String projectPath = "D:\\programWorkspace\\githubWorkspace\\springboot-demo\\springboot_security";
 //        String outPutDir = projectPath + "/src/main/java";
         // 创建者
         String authorName = "gjc";
@@ -58,14 +59,14 @@ public class MyGenerator {
         String serviceImplName = "";
 
         // 数据源配置
-        String dataSourceUrl = "jdbc:mysql://localhost:3306/gjc_security?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false";
+        String dataSourceUrl = "jdbc:mysql://localhost:3306/spring_security?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false";
         String driverName = "com.mysql.cj.jdbc.Driver";
         String username = "root";
         String password = "root";
 
         // 包配置
-        String moduleName = "demo";
-        String parentPackageUrl = "com.example";
+        String parentPackageUrl = "com.gjc";
+        String moduleName = "security";
         String xmlPackageUrl = "dao.single";
         String mapperPackageUrl = "dao.single";
         String servicePackageUrl = "service";
@@ -96,7 +97,7 @@ public class MyGenerator {
 
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
-        String projectPath = System.getProperty("user.dir");
+//        String projectPath = System.getProperty("user.dir");
         gc.setOutputDir(projectPath + "/src/main/java");
         gc.setAuthor(authorName);
         gc.setBaseColumnList(isSetBaseColumnList);
